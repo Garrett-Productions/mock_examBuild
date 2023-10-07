@@ -4,7 +4,7 @@ from flask import flash
 import re    #this imports the regex module
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 password_regex = re.compile(r'^(?=.[a-z])(?=.[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$')
-db = "recipes"
+db = "mock"
 
 class User:
     def __init__( self, db_data ):
